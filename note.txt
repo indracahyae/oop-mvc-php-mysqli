@@ -1,0 +1,27 @@
+bikin sendiri MVC, OOP PHP
+
++ direktori
+    app = controller
+    model = database
+    vendor = package via composer
+    views = template engine by twig
+    assets = file (css,js,img,other ...)
++ .htaccess
++ routing = index.php
++ template engine twig
++ mySqli dan oop php
+
+
+-------- ------- --------
+Cara Run Project Baru
+0 nyalakan xampp
+1 buat database dengan nama "oop_php_mvc"
+2 import file oop_php_mvc.sql di menu phpMyAdmin untuk membuat tabel nya
+3 web suda bisa coab dijalankan
+    
+-------- ------- --------
+BELUM
+- upload file/foto
+- update file/foto
+- hapus file/foto
+- validate form

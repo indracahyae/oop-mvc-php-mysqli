@@ -1,0 +1,49 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Edit Produk{% endblock %}
+
+{% block konten %}
+    <h1>Form Edit Produk</h1>
+
+    <form
+        action="{{base_uri}}/produk/update"
+        method="post"
+        enctype="multipart/form-data"
+    >
+    <input type="hidden" name="id" value='{{data.id}}'/>
+    <div>
+        <label for="">Nama</label>
+        <input required type="text" name="nama" id="" value='{{data.nama}}'/>
+    </div>
+    <div>
+        <label for="">Deskripsi</label>
+        <input required type="text" name="deskripsi" id="" value='{{data.deskripsi}}'/>
+    </div>
+    <div>
+        <label for="">Harga</label>
+        <input required type="number" name="harga" id="" value='{{data.harga}}'/>
+    </div>
+    <div>
+        <label for="">Diskon</label>
+        <input required type="number" name="diskon" id="" value='{{data.diskon}}'/>
+    </div>
+    <div>
+        <label for="">Stok</label>
+        <input required type="number" name="stok" id="" value='{{data.stok}}'/>
+    </div>
+    <div>
+        <label for="">Kategori</label>
+        <select name="kategori" id="">
+            <option value="0"  {{data.kategori == 0 ? 'selected'}}>elektronik</option>
+            <option value="1" {{data.kategori == 1 ? 'selected'}}>Alat tulis</option>
+            <option value="2" {{data.kategori == 2 ? 'selected'}}>Sembako</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Foto</label>
+        <input type="file" name="foto" id="" />
+    </div>
+
+    <button type="submit">simpan</button>
+    </form>
+{% endblock %}

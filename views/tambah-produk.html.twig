@@ -1,0 +1,45 @@
+{% extends "layout.html.twig" %} {% block title %}Home{% endblock %} {% block
+konten %}
+<h1>Form Tambah Produk</h1>
+
+<form
+  action="{{base_uri}}/produk/simpan"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <div>
+    <label for="">Nama</label>
+    <input required type="text" name="nama" id="" />
+  </div>
+  <div>
+    <label for="">Deskripsi</label>
+    <input required type="text" name="deskripsi" id="" />
+  </div>
+  <div>
+    <label for="">Harga</label>
+    <input required type="number" name="harga" id="" />
+  </div>
+  <div>
+    <label for="">Diskon</label>
+    <input required type="number" name="diskon" id="" />
+  </div>
+  <div>
+    <label for="">Stok</label>
+    <input required type="number" name="stok" id="" />
+  </div>
+  <div>
+    <label for="">Kategori</label>
+    <select name="kategori" id="">
+      <option value="0">elektronik</option>
+      <option value="1">Alat tulis</option>
+      <option value="2">Sembako</option>
+    </select>
+  </div>
+  <div>
+    <label for="">Foto</label>
+    <input type="file" name="foto" id="" />
+  </div>
+
+  <button type="submit">simpan</button>
+</form>
+{% endblock %}

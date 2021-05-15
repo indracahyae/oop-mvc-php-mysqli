@@ -1,0 +1,18 @@
+
+{% extends "layout.html.twig" %}
+
+{% block title %}Detail Produk{% endblock %}
+
+{% block konten %}
+  <h1>Detail Produk :</h1>
+
+    <span>ID : {{data.id}}</span> <br>
+    <span>NAMA : {{data.nama}}</span> <br>
+    <span>DESKRIPSI : {{data.deskripsi}}</span> <br>
+    <span>HARGA : {{data.harga}}</span> <br>
+    <span>DISKON : {{data.diskon}}</span> <br>
+    <span>STOK : {{data.stok}}</span> <br>
+    <span>DIBUAT : {{data.created_at}}</span> <br>
+    <span>DIPERBARUI : {{data.updated_at}}</span> <br>
+{% endblock %}
+

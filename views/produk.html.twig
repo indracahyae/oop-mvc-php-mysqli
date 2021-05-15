@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Master Produk{% endblock %}
+
+{% block konten %}
+
+<h1>Data Produk :</h1>
+
+    <div>
+      <a href="{{base_uri}}/produk/tambah">TAMBAH</a>
+      <form action="{{base_uri}}/produk/filter" method="post">
+        <label for="">CARI</label>
+        <input type="text" name="cari" id="" />
+      </form>
+    </div>
+    <br />
+
+    {% for produk in datas %}
+    <div>
+      * Nama : {{ produk.nama }} || desk : {{ produk.deskripsi }} || harga : {{ produk.harga }} || diskon : {{ produk.diskon }}% || Stok : {{ produk.stok }} || Foto : {{ produk.foto }}
+      <a href="{{base_uri}}/produk?id={{produk.id}}">DETAIL</a> | 
+      <a href="{{base_uri}}/produk/edit?id={{produk.id}}">EDIT</a> |
+      <a href="{{base_uri}}/produk/hapus?id={{produk.id}}">HAPUS</a>
+    </div>
+    {% else %} {# empty data #}
+    <h2>Data Kosong</h2>
+    {% endfor %}
+
+{% endblock %}
+
+  {# {{ dump(produk) }} #}
+
