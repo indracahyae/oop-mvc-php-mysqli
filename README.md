@@ -1,8 +1,7 @@
 
 # MVC with PHP OOP
-
-    This project about basic MVC (model view controller) using PHP oop (Object Oriented Programming), twig, dan mySql. 
-    The purpose is for understanding basic MVC concept using PHP
+This project about basic MVC (model view controller) using PHP oop (Object Oriented Programming), twig, dan mySql. 
+The purpose is for understanding basic MVC concept using PHP
 
 
 ## Tech Stack
