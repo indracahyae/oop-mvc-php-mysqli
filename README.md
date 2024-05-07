@@ -1,7 +1,7 @@
 
-# MVC with PHP OOP
-This project about basic MVC (model view controller) using PHP oop (Object Oriented Programming), twig, dan mySql. 
-The purpose is for understanding basic MVC concept using PHP
+# PHP MVC with OOP
+This about basic MVC (model view controller) using PHP oop (Object Oriented Programming), twig, dan mySql. 
+The purpose is for understanding basic MVC concept using PHP.
 
 
 ## Tech Stack
@@ -9,12 +9,9 @@ The purpose is for understanding basic MVC concept using PHP
 - Twig = Template engine
 - Composer = package library
 - Database = MySql
-- MySqli = database driver
-
 
 
 ## Project Directory
-    
     app = controller
     model = database, query
     views = twig template engine
@@ -24,7 +21,6 @@ The purpose is for understanding basic MVC concept using PHP
     routing = web route on index.php
 
 ## Run Locally
-
 - download or Clone this project
 - prepare and start your local server
 - make database table from file “oop_php_mvc.sql” (db.php file for connection)
